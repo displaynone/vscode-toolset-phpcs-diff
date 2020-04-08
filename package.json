@@ -1,0 +1,54 @@
+{
+	"name": "toolset-phpcs-diff",
+	"displayName": "toolset-phpcs-diff",
+	"description": "Toolset PHPCS diff",
+	"version": "0.0.1",
+	"publisher": "displaynone",
+	"engines": {
+		"vscode": "^1.43.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+		"*"
+	],
+	"main": "./extension.js",
+	"contributes": {
+		"configuration": {
+			"type": "object",
+			"title": "Toolset PHPCS Diff",
+			"properties": {
+				"toolset-phpcs-diff.path": {
+					"type": "string",
+					"description": "Toolset PHPCS Diff path"
+				}
+			}
+		},
+		"commands": [
+			{
+				"command": "extension.toolsetphpcsdiff",
+				"title": "Toolset PHPCS diff"
+			}
+		]
+	},
+	"scripts": {
+		"lint": "eslint .",
+		"pretest": "npm run lint",
+		"test": "node ./test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/glob": "^7.1.1",
+		"@types/mocha": "^7.0.1",
+		"@types/node": "^12.11.7",
+		"@types/vscode": "^1.43.0",
+		"eslint": "^6.8.0",
+		"glob": "^7.1.6",
+		"mocha": "^7.0.1",
+		"typescript": "^3.7.5",
+		"vscode-test": "^1.3.0"
+	},
+	"dependencies": {
+		"editorconfig": "^0.15.3"
+	}
+}
