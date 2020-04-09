@@ -31,6 +31,9 @@ class ToolsetPHPCSDiff {
 				getConfig( 'path' )
 			) {
 				self.run( function( error, stdout ) {
+					if ( ! stdout ) {
+						return;
+					}
 					const data = JSON.parse( stdout );
 
 					if ( data.constructor === Object ) {

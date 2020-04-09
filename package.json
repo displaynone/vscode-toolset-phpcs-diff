@@ -1,9 +1,13 @@
 {
 	"name": "toolset-phpcs-diff",
-	"displayName": "toolset-phpcs-diff",
-	"description": "Toolset PHPCS diff",
-	"version": "0.0.1",
+	"displayName": "Toolset PHPCS Diff",
+	"description": "Checks Coding Standards comparing GIT changes",
+	"version": "0.0.2",
 	"publisher": "displaynone",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/displaynone/vscode-toolset-phpcs-diff"
+	},
 	"engines": {
 		"vscode": "^1.43.0"
 	},
